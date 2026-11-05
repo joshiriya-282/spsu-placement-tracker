@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183c36">
+  <title>Career Desk | Placement operations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg class="icons" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V5l7-3 7 3v16M9 9h1m4 0h1m-6 4h1m4 0h1m-5 8v-4h4v4"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m18 6-12 12M6 6l12 12"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8M15 7h6v6"/></symbol>
+  </svg>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Career Desk navigation">
+      <a class="brand" href="#overview"><span class="brand-mark"><i></i><i></i><i></i></span><span>career<span class="brand-accent">desk</span></span></a>
+      <div class="workspace"><span class="workspace-mark">S</span><span><strong>SPSU Udaipur</strong><small>Career Development Cell</small></span><b>⌄</b></div>
+      <p class="nav-heading">PLACEMENT OFFICE</p>
+      <nav class="navigation">
+        <a class="nav-item active" href="#overview" data-nav="overview"><svg><use href="#i-grid"/></svg>Overview</a>
+        <a class="nav-item" href="#drives" data-nav="drives"><svg><use href="#i-briefcase"/></svg>Placement drives<span class="nav-count" id="navDriveCount">0</span></a>
+        <a class="nav-item" href="#applications" data-nav="applications"><svg><use href="#i-users"/></svg>Applications<span class="nav-count">24</span></a>
+        <a class="nav-item" href="#companies" data-nav="companies"><svg><use href="#i-building"/></svg>Companies</a>
+      </nav>
+      <div class="sidebar-bottom"><span class="term-label"><i></i> PLACEMENT SEASON</span><strong>Autumn 2026</strong><small>Last synced just now</small><div class="user-profile"><span>RJ</span><div><strong>Riya Joshi</strong><small>Placement admin</small></div><b>···</b></div></div>
+    </aside>
+
+    <main class="main" id="overview">
+      <header class="topbar"><div class="crumb">Career office <span>/</span> <strong id="currentPage">Overview</strong></div><div class="topbar-right"><span class="live-state"><i></i> Workspace live</span><span class="top-divider"></span><span class="date-label" id="todayLabel"></span><span class="avatar-small">RJ</span></div></header>
+      <div class="content">
+        <section class="welcome"><div class="welcome-copy"><p class="eyebrow"><i></i> SPSU UDAIPUR · CAREER DEVELOPMENT CELL</p><h1>Good morning, Riya<span>.</span></h1><p>One place to make every opportunity count.</p></div><button class="button primary" id="openCreate"><svg><use href="#i-plus"/></svg>Create a drive</button><span class="welcome-index">CDC<br>2026</span></section>
+
+        <section class="stats" aria-label="Placement overview">
+          <article class="stat stat-live"><div class="stat-label">Open drives<span><svg><use href="#i-briefcase"/></svg></span></div><strong id="openDriveCount">0</strong><small><i></i> Accepting applications</small></article>
+          <article class="stat stat-apps"><div class="stat-label">Applications received<span><svg><use href="#i-users"/></svg></span></div><strong>248</strong><small><i><svg><use href="#i-trend"/></svg></i> Across this season</small></article>
+          <article class="stat stat-companies"><div class="stat-label">Partner companies<span><svg><use href="#i-building"/></svg></span></div><strong>18</strong><small>Across 6 industries</small></article>
+          <article class="stat stat-deadline"><div class="stat-label">Closing this week<span><svg><use href="#i-calendar"/></svg></span></div><strong id="closingCount">0</strong><small>Drives need attention</small></article>
+        </section>
+
+        <section class="drives-section" id="drives" aria-labelledby="drivesTitle">
+          <div class="section-heading"><div><p class="section-kicker">OPPORTUNITY BOARD</p><h2 id="drivesTitle">Placement drives <span id="driveTotal">0</span></h2></div><button class="button secondary" id="sectionCreate"><svg><use href="#i-plus"/></svg>New drive</button></div>
+          <div class="drive-toolbar"><div class="tabs" role="tablist" aria-label="Filter drives"><button class="tab active" role="tab" aria-selected="true" data-filter="All">All drives <span id="allDriveCount">0</span></button><button class="tab" role="tab" aria-selected="false" data-filter="Open">Open</button><button class="tab" role="tab" aria-selected="false" data-filter="Closing soon">Closing soon</button><button class="tab" role="tab" aria-selected="false" data-filter="Closed">Closed</button></div><label class="search"><svg><use href="#i-search"/></svg><input id="driveSearch" type="search" placeholder="Search companies or roles" autocomplete="off"></label></div>
+          <div class="table-scroll"><table><thead><tr><th>COMPANY & ROLE</th><th>PACKAGE</th><th>MIN. CGPA</th><th>DEADLINE</th><th>STATUS</th></tr></thead><tbody id="driveRows"></tbody></table><div class="empty-state" id="emptyState" hidden><span>No drives match</span><small>Try another filter or create a new opportunity.</small><button class="text-action" id="resetFilters">Reset filters</button></div></div>
+          <footer class="table-footer"><span id="resultsSummary">Showing 0 drives</span><span><i></i> Drive data saved on this device</span></footer>
+        </section>
+
+        <section class="bottom-grid" id="applications">
+          <article class="activity-panel"><div class="section-heading compact"><div><p class="section-kicker">LATEST MOVEMENT</p><h2>Application activity</h2></div><a href="#applications">View all <svg><use href="#i-arrow"/></svg></a></div><div class="activity-row"><span class="activity-avatar avatar-one">MK</span><div><strong>Meera Kapoor</strong><small>Applied to Software Engineer · Northstar</small></div><span class="activity-status status-review">Review</span></div><div class="activity-row"><span class="activity-avatar avatar-two">AS</span><div><strong>Ananya Singh</strong><small>Moved to selected · Product Designer</small></div><span class="activity-status status-selected">Selected</span></div><div class="activity-row"><span class="activity-avatar avatar-three">KJ</span><div><strong>Kabir Joshi</strong><small>Applied to Data Analyst · Veridian</small></div><span class="activity-status status-new">New</span></div></article>
+          <aside class="season-panel" id="companies"><div><p class="section-kicker">THIS SEASON</p><h2>Build the bridge<br>to what’s next.</h2><p>Your drive board is the first step to helping students meet the right teams.</p></div><div class="season-mark">26<span>·</span></div><span class="season-foot">SPSU CAREER SERVICES</span></aside>
+        </section>
+        <footer class="page-footer"><span>Career Desk <i>·</i> Placement operations</span><span>INTERNAL WORKSPACE</span></footer>
+      </div>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="formTitle"><div class="modal-head"><div><p class="section-kicker">PLACEMENT OPPORTUNITY</p><h2 id="formTitle">Create a drive</h2></div><button class="icon-close" id="closeModal" type="button" aria-label="Close dialog"><svg><use href="#i-close"/></svg></button></div><p class="modal-copy">Add the details students need to decide if this role is right for them.</p><form id="driveForm" novalidate><div class="form-grid"><label class="field field-wide" for="companyName">Company name <i>*</i><input id="companyName" name="companyName" placeholder="e.g. Northstar Technologies" maxlength="100" autocomplete="organization"><small class="field-error" id="companyError"></small></label><label class="field field-wide" for="jobRole">Job role <i>*</i><input id="jobRole" name="jobRole" placeholder="e.g. Graduate Software Engineer" maxlength="100"><small class="field-error" id="roleError"></small></label><label class="field" for="packageLpa">Package <i>*</i><span class="input-unit"><input id="packageLpa" name="packageLpa" type="number" min="0.1" step="0.1" placeholder="8.5"><b>LPA</b></span><small class="field-error" id="packageError"></small></label><label class="field" for="minCgpa">Minimum CGPA <i>*</i><input id="minCgpa" name="minCgpa" type="number" min="0" max="10" step="0.1" placeholder="7.0"><small class="field-error" id="cgpaError"></small></label><label class="field field-wide" for="deadline">Application deadline <i>*</i><input id="deadline" name="deadline" type="date"><small class="field-error" id="deadlineError"></small></label></div><p class="form-feedback" id="formFeedback" role="status" aria-live="polite" hidden></p><div class="modal-actions"><button class="button ghost" id="cancelModal" type="button">Cancel</button><button class="button primary" type="submit"><svg><use href="#i-plus"/></svg>Publish drive</button></div></form></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js?v=1"></script>
+</body>
+</html>
